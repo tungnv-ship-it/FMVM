@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trưng bày Sản phẩm 3D</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    
+    <style>
+        /* Phần này dùng để canh chỉnh cái khung hiển thị */
+        body { margin: 0; background-color: #f3f3f3; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        model-viewer {
+            width: 80%;       /* Chiều rộng khung */
+            height: 600px;    /* Chiều cao khung */
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <model-viewer 
+        src="sanpham.glb" 
+        ar 
+        camera-controls 
+        auto-rotate 
+        shadow-intensity="1"
+        exposure="1"
+        camera-orbit="45deg 75deg 105%"
+        alt="Mô hình 3D của tôi">
+    </model-viewer>
+
+</body>
+</html>
